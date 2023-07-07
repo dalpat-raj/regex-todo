@@ -1,0 +1,63 @@
+button{
+    cursor: pointer;
+    background-color: aqua;
+    border: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.todo__list{
+    width: 100%;
+}
+.list__row{
+    padding: 0.5rem 1rem;
+    width: 50%;
+    background-color: rgb(235, 235, 235);
+    margin: 0.6rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+span button{
+    margin-left: 1rem;
+}
+
+.check{
+    color: green;
+}
+
+.button__container>button{
+    background: none;
+    font-size: 1rem;
+}
+.task, .date{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+@media only screen and (max-width:900px){
+    .list__row{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .list__row{
+        width: 96%;
+    }
+    .button__container>button{
+        background: none;
+        font-size: 0.8rem;
+    }
+    .task, .date{
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+    span{
+        font-size: 0.8rem;
+    }
+}
